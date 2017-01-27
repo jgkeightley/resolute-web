@@ -181,6 +181,9 @@ header .intro-text .intro-lead-in {
   line-height: 22px;
   margin-bottom: 25px;
 }
+header .intro-text .intro-lead-in > img {
+  width: 75%;
+}
 header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -191,7 +194,7 @@ header .intro-text .intro-heading {
 }
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 300px;
+    padding-top: 250px;
     padding-bottom: 200px;
   }
   header .intro-text .intro-lead-in {
