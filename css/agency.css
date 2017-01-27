@@ -154,6 +154,10 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   font-family: "Amatic SC", "Helvetica Neue", Helvetica, Arial, cursive;
 }
+.navbar-custom .navbar-brand>img {
+  height: 50px;
+  margin: -15px 0;
+}
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
@@ -226,7 +230,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/header-bg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('../img/header-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
