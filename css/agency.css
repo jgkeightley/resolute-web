@@ -33,13 +33,13 @@ a.active {
   outline: none;
 }
 a {
-  color: #fed136;
+  color: #90DED2;
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503;
+  color: #70DED2;
 }
 h1,
 h2,
@@ -147,7 +147,7 @@ h6 {
 }
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #222222;
+    background-color: #2C5075;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
@@ -570,7 +570,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #2C5075;
+  background-color: #90DED2;
 }
 .btn:focus,
 .btn:active,
