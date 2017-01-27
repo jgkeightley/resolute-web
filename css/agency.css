@@ -172,8 +172,8 @@ header {
   color: white;
 }
 header .intro-text {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 200px;
+  padding-bottom: 150px;
 }
 header .intro-text .intro-lead-in {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
