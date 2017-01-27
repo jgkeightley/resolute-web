@@ -88,8 +88,8 @@ h6 {
   font-family: "Amatic SC", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-custom .navbar-brand>img {
-  height: 50px;
-  margin: -15px 0;
+  height: 35px;
+  margin: -7px 0;
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
@@ -146,6 +146,11 @@ h6 {
   }
 }
 @media (min-width: 768px) {
+  .navbar-custom .navbar-brand>img {
+    height: 50px;
+    margin: -15px 0;
+  }
+
   .navbar-custom.affix {
     background-color: #2C5075;
     padding: 10px 0;
