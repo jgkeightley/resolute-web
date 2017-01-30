@@ -702,3 +702,11 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #90DED2;
 }
+footer {
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #fc00ff, #00dbde);
+  color: white;
+}
+
+footer a {
+  color: white;
+}
