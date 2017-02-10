@@ -727,6 +727,91 @@
 
             var today = year + "-" + month + "-" + day;       
             $("#today").val(today);
+        });
+
+        function print() {
+          var name = $("#name").val();
+          var phone = $("#phone").val();
+          var address = $("#phone").val();
+          var city = $("#city").val();
+          var state = $("#state").val();
+          var postcode = $("#postcode").val();
+          var email = $("#email").val();
+          var dob = $("#dob").val();
+          var occupation = $("#occupation").val();
+          var ec1 = $("#ec1").val();
+          var ec1phone = $("#ec1phone").val();
+          var ec2 = $("#ec2").val();
+          var ec2phone = $("#ec2phone").val();
+          var complaint = $("#complaint").val();
+          var onset = $("#onset").val();
+          var massagehx = $("input[name=massagehx]:checked").val();
+          var supine = $("#input[name=supine]:checked").val();
+          var prone = $("#input[name=prone]:checked").val();
+          var sidelying = $("#input[name=sidelying]:checked").val();
+          var signature = $("#signature").val();
+          var othercondition = $("#othercondition").val();
+          var medication = $("#medication").val();
+          var today = $("#today").val();
+
+          var headaches = $("#headaches").is(':checked');
+          var cancer = $("#cancer").is(':checked');
+          var numbness = $("#numbness").is(':checked');
+          var kidney = $("#kidney").is(':checked');
+          var weakness = $("#weakness").is(':checked');
+          var nausea = $("#nausea").is(':checked');
+          var arthritis = $("#arthritis").is(':checked');
+          var stroke = $("#stroke").is(':checked');
+          var diabetes = $("#diabetes").is(':checked');
+          var depression = $("#depression").is(':checked');
+          var bowel = $("#bowel").is(':checked');
+          var bladder = $("#bladder").is(':checked');
+          var chest = $("#chest").is(':checked');
+          var dizziness = $("#dizziness").is(':checked');
+          var breathing = $("#breathing").is(':checked');
+          var abdominal = $("#abdominal").is(':checked');
+
+          $("#nameVal").text(name);
+          $("#phoneVal").text(phone);
+          $("#phoneVal").text(address);
+          $("#cityVal").text(city);
+          $("#stateVal").text(state);
+          $("#postcodeVal").text(postcode);
+          $("#emailVal").text(email);
+          $("#dobVal").text(dob);
+          $("#occupationVal").text(occupation);
+          $("#ec1Val").text(ec1);
+          $("#ec1phoneVal").text(ec1phone);
+          $("#ec2Val").text(ec2);
+          $("#ec2phoneVal").text(ec2phone);
+          $("#complaintVal").text(complaint);
+          $("#onsetVal").text(onset);
+          $("#massagehxVal").text(massagehx);
+          $("#supineVal").text(supine);
+          $("#proneVal").text(prone);
+          $("#sidelyingVal").text(sidelying);
+          $("#signatureVal").text(signature);
+          $("#othercondition").text(othercondition);
+          $("#medication").text(medication);
+          $("#todayVal").text(today);
+
+          $("#headachesVal").text(headaches);
+          $("#cancerVal").text(cancer);
+          $("#numbnessVal").text(numbness);
+          $("#kidneyVal").text(kidney);
+          $("#weaknessVal").text(weakness);
+          $("#nauseaVal").text(nausea);
+          $("#arthritisVal").text(arthritis);
+          $("#strokeVal").text(stroke);
+          $("#diabetesVal").text(diabetes);
+          $("#depressionVal").text(depression);
+          $("#bowelVal").text(bowel);
+          $("#bladderVal").text(bladder);
+          $("#chestVal").text(chest);
+          $("#dizzinession").text(dizziness);
+          $("#breathingion").text(breathing);
+          $("#abdominalVal").text(abdominal);
+        }
     </script>
   </body>
 </html>
