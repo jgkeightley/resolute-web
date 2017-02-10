@@ -448,6 +448,16 @@
             var today = year + "-" + month + "-" + day;       
             $("#today").val(today);
         });
+
+        function sendData() {
+          var form = $("#newClient");
+          var formData = form.serialize();
+
+          var sigdiv = $("#signature");
+          var sigData = sigdiv.jSignature("getData");
+
+          console.log(formData + "&sig=" + sigData)
+        }
     </script>
   </body>
 </html>
