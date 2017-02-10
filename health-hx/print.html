@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="theme-color" content="#333333">
+    <title>New Client History Form</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="../css/agency.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <a href="index.html"><img src="../img/logo/full.png" style="width: 150px;"></a>
+          </a>
+        </div>
+        <ul class="nav masthead-nav navbar-right">
+          <h2>New Client Form</h2>
+        </ul>
+      </div>
+    </nav>
+
+      <div class="container">
+        <form id="newClient">
+
+          <div class="row">
+            <div class="col-xs-6">
+              <p>Name: <span id="nameVal"></span></p>
+            </div>
+
+            <div class="col-xs-6">
+              <p>Phone: <span id="phoneVal"></span></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <p>Address: <span id="addressVal"></span></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <p>City: <span id="cityVal"></span></p>
+            </div>
+
+            <div class="col-xs-2">
+              <p>State: <span id="stateVal"></span></p>
+            </div>
+
+            <div class="col-xs-4">
+              <p>Post Code: <span id="postcodeVal"></span></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-4">
+              <p>Email: <span id="emailVal"></span></p>
+            </div>
+
+            <div class="col-xs-4">
+              <p>D.O.B: <span id="dobVal"></span></p>
+            </div>
+
+            <div class="col-xs-4">
+              <p>Occupation: <span id="occupationVal"></span></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h2 class="text-center">Emergency Contact 1</h2>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>Emergency Contact 1: <span id="ec1Val"></span></p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>Phone: <span id="ec1PhoneVal"></span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h2 class="text-center">Emergency Contact 2</h2>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>Emergency Contact 2: <span id="ec2Val"></span></p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>Phone: <span id="ec2PhoneVal"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="text-center">Primary Reason For Visit</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <p>Major Complaint: <span id="complaintVal"></span></p>
+            </div>
+
+            <div class="col-xs-6">
+              <p>Date of onset: <span id="onsetVal"></span></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-xs-4">
+                Have you had a massage before?
+              </div>
+              <div class="col-xs-8">
+
+                <p><span id="massagehxVal"></span></p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-xs-4">
+                Do you have trouble lying on your back?
+              </div>
+              <div class="col-xs-8">
+
+                <p><span id="supineVal"></span></p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-xs-4">
+                Do you have trouble lying on your front?
+              </div>
+              <div class="col-xs-8">
+
+                <p><span id="proneVal"></span></p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-xs-4">
+                Do you have trouble lying on your side?
+              </div>
+              <div class="col-xs-8">
+
+                <p><span id="sidelyingVal"></span></p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="text-center">Related Conditions</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="headaches" name="headaches" value="headaches"> Headaches
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="cancer" name="cancer" value="cancer"> Cancer
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="numbness" name="numbness" value="numbness"> Numbness/Tingling
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="kidney" name="kidney" value="kidney"> Kidney Problems
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="weakness" name="weakness" value="weakness"> Weakness
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="nausea" name="nausea" value="nausea"> Nausea
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="arthritis" name="arthritis" value="arthritis"> Arthritis
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="stroke" name="stroke" value="stroke"> Stroke
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="diabetes" name="diabetes" value="diabetes"> Diabetes
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="depression" name="depression" value="depression"> Depression
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="bowel" name="bowel" value="bowel"> Bowel Problems
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="bladder" name="bladder" value="bladder"> Bladder Problems
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="chest" name="chest" value="chest"> Chest Pain
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="dizziness" name="dizziness" value="dizziness"> Dizziness
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="breathing" name="breathing" value="breathing"> Breathing Problems
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="abdominal" name="abdominal" value="abdominal"> Abdominal Pain
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <br>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <p>Other medical conditions or injuries: <span id="otherconditionVal"></span></p>
+            </div>
+
+            <div class="col-xs-6">
+              <p>Current Medication: <span id="medicationVal"></span></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="text-center">Disclaimer</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="">Massage may elicit benefits for certain conditions, which may include relief of muscular tension, reduction in the symptoms of stress-related conditions and provision of general health and wellbeing. I also understand that massage therapy may produce side-effects such as muscle soreness, mild bruising, increased awareness of areas of pain and lightheadedness amongst other possible temporary outcomes. I am aware that the therapist does not diagnose illnesses, prescribe medications nor physically manipulate the spine or its immediate articulations.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-8">
+              <p>I understand and agree with the above statement: <span id="sigantureVal"></span></p>
+            </div>
+
+            <div class="col-xs-4">
+              <p>Date: <span id="todayVal"></span></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <br>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <button type="submit" class="btn-xl btn-primary">Submit</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <div class="container">
+        
+      </div>
+
+      <hr class="featurette-divider">
+
+      <footer>
+        <div class="inner">
+          <p>Made with love in the 6006.</p>
+        </div>
+      </footer>
+    </div>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="../js/jSignature.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#signature").jSignature();
+
+            //set the date
+            var date = new Date();
+
+            var day = date.getDate();
+            var month = date.getMonth() + 1;
+            var year = date.getFullYear();
+
+            if (month < 10) month = "0" + month;
+            if (day < 10) day = "0" + day;
+
+            var today = year + "-" + month + "-" + day;       
+            $("#today").val(today);
+        })
+    </script>
+  </body>
+</html>

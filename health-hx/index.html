@@ -162,7 +162,7 @@
 
           <div class="row">
             <div class="col-xs-12">
-              <h2 class="text-center">Primary Reson For Visit</h2>
+              <h2 class="text-center">Primary Reason For Visit</h2>
             </div>
           </div>
 
@@ -418,7 +418,283 @@
       </div>
 
       <div class="container">
-        
+        <div id="printValues" hidden="true">
+
+          <div class="row">
+            <div class="col-xs-6">
+              <p>Name: <span id="nameVal"></span></p>
+            </div>
+
+            <div class="col-xs-6">
+              <p>Phone: <span id="phoneVal"></span></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <p>Address: <span id="addressVal"></span></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <p>City: <span id="cityVal"></span></p>
+            </div>
+
+            <div class="col-xs-2">
+              <p>State: <span id="stateVal"></span></p>
+            </div>
+
+            <div class="col-xs-4">
+              <p>Post Code: <span id="postcodeVal"></span></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-4">
+              <p>Email: <span id="emailVal"></span></p>
+            </div>
+
+            <div class="col-xs-4">
+              <p>D.O.B: <span id="dobVal"></span></p>
+            </div>
+
+            <div class="col-xs-4">
+              <p>Occupation: <span id="occupationVal"></span></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h2 class="text-center">Emergency Contact 1</h2>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>Emergency Contact 1: <span id="ec1Val"></span></p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>Phone: <span id="ec1PhoneVal"></span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h2 class="text-center">Emergency Contact 2</h2>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>Emergency Contact 2: <span id="ec2Val"></span></p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>Phone: <span id="ec2PhoneVal"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="text-center">Primary Reason For Visit</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <p>Major Complaint: <span id="complaintVal"></span></p>
+            </div>
+
+            <div class="col-xs-6">
+              <p>Date of onset: <span id="onsetVal"></span></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-xs-4">
+                Have you had a massage before?
+              </div>
+              <div class="col-xs-8">
+
+                <p><span id="massagehxVal"></span></p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-xs-4">
+                Do you have trouble lying on your back?
+              </div>
+              <div class="col-xs-8">
+
+                <p><span id="supineVal"></span></p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-xs-4">
+                Do you have trouble lying on your front?
+              </div>
+              <div class="col-xs-8">
+
+                <p><span id="proneVal"></span></p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-xs-4">
+                Do you have trouble lying on your side?
+              </div>
+              <div class="col-xs-8">
+
+                <p><span id="sidelyingVal"></span></p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="text-center">Related Conditions</h2>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-xs-3">
+              <p>Headaches: <span id="headachesVal"></span></p>
+            </div>
+            <div class="col-xs-3">
+              <p>Cancer: <span id="cancerVal"></span></p>
+            </div>
+            <div class="col-xs-3">
+              <p>Numbness/Tingling: <span id="numbnessVal"></span></p>
+            </div>
+            <div class="col-xs-3">
+              <p>Kidney Problems: <span id="kidneyVal"></span></p>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-xs-3">
+              <p>Weakness: <span id="weaknessVal"></span></p>
+            </div>
+            <div class="col-xs-3">
+              <p>Nausea: <span id="nauseaVal"></span></p>
+            </div>
+            <div class="col-xs-3">
+              <p>Arthritis: <span id="arthritisVal"></span></p>
+            </div>
+            <div class="col-xs-3">
+              <p>Stroke: <span id="strokeVal"></span></p>
+            </div>
+            
+          </div>
+
+          <div class="row">
+
+            <div class="col-xs-3">
+              <p>Diabetes: <span id="diabetesVal"></span></p>
+            </div>
+            <div class="col-xs-3">
+              <p>Depression: <span id="depressionVal"></span></p>
+            </div>
+            <div class="col-xs-3">
+              <p>Bowel Problems: <span id="bowelVal"></span></p>
+            </div>
+            <div class="col-xs-3">
+              <p>Bladder Problems: <span id="bladderVal"></span></p>
+            </div>
+            
+          </div>
+
+          <div class="row">
+
+            <div class="col-xs-3">
+              <p>Chest Pain: <span id="chestVal"></span></p>
+            </div>
+            <div class="col-xs-3">
+              <p>Dizziness: <span id="dizzinessVal"></span></p>
+            </div>
+            <div class="col-xs-3">
+              <p>Breathing Problems: <span id="breathingVal"></span></p>
+            </div>
+            <div class="col-xs-3">
+              <p>Abdominal Pain: <span id="abdominalVal"></span></p>
+            </div>
+            
+          </div>
+
+          <div class="row">
+            <br>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <p>Other medical conditions or injuries: <span id="otherconditionVal"></span></p>
+            </div>
+
+            <div class="col-xs-6">
+              <p>Current Medication: <span id="medicationVal"></span></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="text-center">Disclaimer</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="">Massage may elicit benefits for certain conditions, which may include relief of muscular tension, reduction in the symptoms of stress-related conditions and provision of general health and wellbeing. I also understand that massage therapy may produce side-effects such as muscle soreness, mild bruising, increased awareness of areas of pain and lightheadedness amongst other possible temporary outcomes. I am aware that the therapist does not diagnose illnesses, prescribe medications nor physically manipulate the spine or its immediate articulations.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-8">
+              <p>I understand and agree with the above statement: <span id="sigantureVal"></span></p>
+            </div>
+
+            <div class="col-xs-4">
+              <p>Date: <span id="todayVal"></span></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <br>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <button type="submit" class="btn-xl btn-primary">Submit</button>
+            </div>
+          </div>
+
+        </div>
       </div>
 
       <hr class="featurette-divider">
@@ -451,7 +727,6 @@
 
             var today = year + "-" + month + "-" + day;       
             $("#today").val(today);
-        })
     </script>
   </body>
 </html>
