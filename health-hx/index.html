@@ -23,21 +23,21 @@
   </head>
   <body>
 
+  <nav class="navbar navbar-default">
     <div class="container">
-      <div class="masthead clearfix">
-        <div class="inner">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
           <a href="index.html"><img src="../img/logo/full.png" style="width: 150px;"></a>
-          <nav>
-            <ul class="nav masthead-nav">
-              <h2>New Client Form</h2>
-            </ul>
-          </nav>
-        </div>
+        </a>
       </div>
-    </div><!-- /.container -->
+      <ul class="nav masthead-nav navbar-right">
+        <h2>New Client Form</h2>
+      </ul>
+    </div>
+  </nav>
 
     <div class="container">
-      <form>
+      <form id="newClient">
 
         <div class="row">
           <div class="col-sm-6">
@@ -266,47 +266,22 @@
           <div class="form-group">
             <div class="form-group">
               <label class="col-sm-3">
-                <input type="checkbox" id="headaches" value="headaches"> Headaches
+                <input type="checkbox" id="headaches" name="headaches" value="headaches"> Headaches
               </label>
             </div>
             <div class="form-group">
               <label class="col-sm-3">
-                <input type="checkbox" id="cancer" value="cancer"> Cancer
+                <input type="checkbox" id="cancer" name="cancer" value="cancer"> Cancer
               </label>
             </div>
             <div class="form-group">
               <label class="col-sm-3">
-                <input type="checkbox" id="numbness" value="numbness"> Numbness/Tingling
+                <input type="checkbox" id="numbness" name="numbness" value="numbness"> Numbness/Tingling
               </label>
             </div>
             <div class="form-group">
               <label class="col-sm-3">
-                <input type="checkbox" id="kidney" value="kidney"> Kidney Problems
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="form-group">
-            <div class="form-group">
-              <label class="col-sm-3">
-                <input type="checkbox" id="weakness" value="weakness"> Weakness
-              </label>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-3">
-                <input type="checkbox" id="nausea" value="nausea"> Nausea
-              </label>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-3">
-                <input type="checkbox" id="arthritis" value="arthritis"> Arthritis
-              </label>
-            </div>
-            <div class="form-group">
-              <label class="col-sm-3">
-                <input type="checkbox" id="stroke" value="stroke"> Stroke
+                <input type="checkbox" id="kidney" name="kidney" value="kidney"> Kidney Problems
               </label>
             </div>
           </div>
@@ -316,22 +291,22 @@
           <div class="form-group">
             <div class="form-group">
               <label class="col-sm-3">
-                <input type="checkbox" id="diabetes" value="diabetes"> Diabetes
+                <input type="checkbox" id="weakness" name="weakness" value="weakness"> Weakness
               </label>
             </div>
             <div class="form-group">
               <label class="col-sm-3">
-                <input type="checkbox" id="depression" value="depression"> Depression
+                <input type="checkbox" id="nausea" name="nausea" value="nausea"> Nausea
               </label>
             </div>
             <div class="form-group">
               <label class="col-sm-3">
-                <input type="checkbox" id="bowel" value="bowel"> Bowel Problems
+                <input type="checkbox" id="arthritis" name="arthritis" value="arthritis"> Arthritis
               </label>
             </div>
             <div class="form-group">
               <label class="col-sm-3">
-                <input type="checkbox" id="bladder" value="bladder"> Bladder Problems
+                <input type="checkbox" id="stroke" name="stroke" value="stroke"> Stroke
               </label>
             </div>
           </div>
@@ -341,22 +316,47 @@
           <div class="form-group">
             <div class="form-group">
               <label class="col-sm-3">
-                <input type="checkbox" id="chest" value="chest"> Chest Pain
+                <input type="checkbox" id="diabetes" name="diabetes" value="diabetes"> Diabetes
               </label>
             </div>
             <div class="form-group">
               <label class="col-sm-3">
-                <input type="checkbox" id="dizziness" value="dizziness"> Dizziness
+                <input type="checkbox" id="depression" name="depression" value="depression"> Depression
               </label>
             </div>
             <div class="form-group">
               <label class="col-sm-3">
-                <input type="checkbox" id="breathing" value="breathing"> Breathing Problems
+                <input type="checkbox" id="bowel" name="bowel" value="bowel"> Bowel Problems
               </label>
             </div>
             <div class="form-group">
               <label class="col-sm-3">
-                <input type="checkbox" id="abdominal" value="abdominal"> Abdominal Pain
+                <input type="checkbox" id="bladder" name="bladder" value="bladder"> Bladder Problems
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group">
+            <div class="form-group">
+              <label class="col-sm-3">
+                <input type="checkbox" id="chest" name="chest" value="chest"> Chest Pain
+              </label>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3">
+                <input type="checkbox" id="dizziness" name="dizziness" value="dizziness"> Dizziness
+              </label>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3">
+                <input type="checkbox" id="breathing" name="breathing" value="breathing"> Breathing Problems
+              </label>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-3">
+                <input type="checkbox" id="abdominal" name="abdominal" value="abdominal"> Abdominal Pain
               </label>
             </div>
           </div>
@@ -394,15 +394,25 @@
 
         <div class="row">
           <div class="col-sm-8">
-            <div class="form-group">
-              <input type="text" class="form-control" id="name" placeholder="Full Name">
-            </div>
+            <div id="signature" class="signature" style=" background-color: #ffffff; background-image: none; border: 1px solid #cccccc; border-radius: 2px;"></div>
           </div>
 
           <div class="col-sm-4">
             <div class="form-group">
               <input type="date" class="form-control" id="today" placeholder="Date">
             </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <br>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <button type="submit" class="btn-xl btn-primary">Submit</button>
+
+            <p><tt id="results"></tt></p>
           </div>
         </div>
 
@@ -421,7 +431,22 @@
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="../js/jSignature.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#signature").jSignature()
+        })
+
+        function showValues() {
+          var str = $( "#newClient" ).serialize();
+          $( "#results" ).text( str );
+        }
+        $( "input[type='checkbox'], input[type='radio'], button[type='submit']" ).on( "click", showValues );
+        $( "select" ).on( "change", showValues );
+        showValues();
+    </script>
   </body>
 </html>
