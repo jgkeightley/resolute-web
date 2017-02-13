@@ -410,7 +410,8 @@
 
           <div class="row">
             <div class="col-xs-12 text-center">
-              <button type="submit" class="btn-xl btn-primary">Submit</button>
+              <input type="text" id="sig" name="sig" hidden="true">
+              <a id="go" class="btn-lg btn-primary" onclick="send()">Submit</a>
             </div>
           </div>
 
@@ -449,14 +450,33 @@
             $("#today").val(today);
         });
 
+        function send() {
+          var sigdiv = $("#signature");
+          var sigData = sigdiv.jSignature("getData");
+          sigData = sigData.replace(/^.+64,/,'');
+
+          var sigInput = $("#sig");
+          sigInput.val(sigData);
+
+          window.location = "print.html?" + sendData(); 
+        }
+
         function sendData() {
           var form = $("#newClient");
           var formData = form.serialize();
 
-          var sigdiv = $("#signature");
-          var sigData = sigdiv.jSignature("getData");
+          console.log(formData)
+          return(formData)
+        }
 
-          console.log(formData + "&sig=" + sigData)
+        $.urlParam = function(name) {
+          var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+          if (results==null){
+            return null;
+          }
+          else{
+            return results[1] || 0;
+          }
         }
     </script>
   </body>

@@ -39,47 +39,81 @@
       <div class="container">
         <form id="newClient">
 
-          <div class="row">
-            <div class="col-xs-6">
-              <p>Name: <span id="nameVal"></span></p>
+          <div class="row form-group">
+            <div class="col-xs-1">
+              <p>Name: </p>
+            </div>
+            <div class="col-xs-5">
+              <input type="text" class="form-control" id="name" name="name" disabled="disabled">
             </div>
 
-            <div class="col-xs-6">
-              <p>Phone: <span id="phoneVal"></span></p>
+            <div class="col-xs-1">
+              <p>Phone: </p>
+            </div>
+            <div class="col-xs-5">
+              <input type="text" class="form-control" id="phone" name="phone" disabled="disabled">
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-xs-12">
-              <p>Address: <span id="addressVal"></span></p>
+          <div class="row form-group">
+            <div class="col-xs-1">
+              <p>Address: </p>
+            </div>
+
+            <div class="col-xs-11">
+              <input type="text" class="form-control" id="address" name="address" disabled="disabled">
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-xs-6">
-              <p>City: <span id="cityVal"></span></p>
+          <div class="row form-group">
+            <div class="col-xs-1">
+              <p>City: </p>
+            </div>
+
+            <div class="col-xs-4">
+              <input type="text" class="form-control" id="city" name="city" disabled="disabled">
+            </div>
+
+            <div class="col-xs-1">
+              <p>State: </p>
             </div>
 
             <div class="col-xs-2">
-              <p>State: <span id="stateVal"></span></p>
+              <input type="text" class="form-control" id="state" name="state" disabled="disabled">
             </div>
 
-            <div class="col-xs-4">
-              <p>Post Code: <span id="postcodeVal"></span></p>
+            <div class="col-xs-1">
+              <p>Post Code: </p>
+            </div>
+
+            <div class="col-xs-3">
+              <input type="text" class="form-control" id="postcode" name="postcode"  disabled="disabled">
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-xs-4">
-              <p>Email: <span id="emailVal"></span></p>
+          <div class="row form-group">
+            <div class="col-xs-1">
+              <p>Email: </p>
             </div>
 
             <div class="col-xs-4">
-              <p>D.O.B: <span id="dobVal"></span></p>
+              <input type="text" class="form-control" id="email" name="email" disabled="disabled">
             </div>
 
-            <div class="col-xs-4">
-              <p>Occupation: <span id="occupationVal"></span></p>
+            <div class="col-xs-1">
+              <p>D.O.B: </p>
+            </div>
+
+            <div class="col-xs-2">
+              <input type="text" class="form-control" id="dob" name="dob" disabled="disabled">
+            </div>
+
+            <div class="col-xs-1">
+              <p>Occupation: </p>
+            </div>
+
+            <div class="col-xs-3">
+              <input type="text" class="form-control" id="occupation" name="occupation" disabled="disabled">
             </div>
           </div>
 
@@ -91,15 +125,21 @@
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-xs-12">
-                  <p>Emergency Contact 1: <span id="ec1Val"></span></p>
+              <div class="row form-group">
+                <div class="col-xs-2">
+                  <p>Name: </p>
+                </div>
+                <div class="col-xs-10">
+                  <input type="text" class="form-control" id="ec1" name="ec1" disabled="disabled">
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-xs-12">
-                  <p>Phone: <span id="ec1PhoneVal"></span></p>
+              <div class="row form-group">
+                <div class="col-xs-2">
+                  <p>Phone: </p>
+                </div>
+                <div class="col-xs-10">
+                  <input type="text" class="form-control" id="ec1phone" name="ec1phone" disabled="disabled">
                 </div>
               </div>
             </div>
@@ -111,15 +151,21 @@
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-xs-12">
-                  <p>Emergency Contact 2: <span id="ec2Val"></span></p>
+              <div class="row form-group">
+                <div class="col-xs-2">
+                  <p>Name: </p>
+                </div>
+                <div class="col-xs-10">
+                  <input type="text" class="form-control" id="ec2" name="ec2" disabled="disabled">
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-xs-12">
-                  <p>Phone: <span id="ec2PhoneVal"></span></p>
+              <div class="row form-group">
+                <div class="col-xs-2">
+                  <p>Phone: </p>
+                </div>
+                <div class="col-xs-10">
+                  <input type="text" class="form-control" id="ec2phone" name="ec2phone" disabled="disabled">
                 </div>
               </div>
             </div>
@@ -131,65 +177,51 @@
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-xs-6">
-              <p>Major Complaint: <span id="complaintVal"></span></p>
+          <div class="row form-group">
+            <div class="col-xs-2">
+              <p>Major complaint: </p>
+            </div>
+            <div class="col-xs-4">
+              <input type="text" class="form-control" id="complaint" name="complaint" disabled="disabled">
             </div>
 
-            <div class="col-xs-6">
-              <p>Date of onset: <span id="onsetVal"></span></p>
+            <div class="col-xs-2">
+              <p>Date of onset: </p>
             </div>
-          </div>
-
-          <div class="row">
-            <div class="form-group">
-              <div class="col-xs-4">
-                Have you had a massage before?
-              </div>
-              <div class="col-xs-8">
-
-                <p><span id="massagehxVal"></span></p>
-
-              </div>
+            <div class="col-xs-4">
+              <input type="text " class="form-control" id="onset" name="onset" disabled="disabled">
             </div>
           </div>
 
-          <div class="row">
-            <div class="form-group">
-              <div class="col-xs-4">
-                Do you have trouble lying on your back?
-              </div>
-              <div class="col-xs-8">
-
-                <p><span id="supineVal"></span></p>
-
-              </div>
+          <div class="row form-group">
+            <div class="col-xs-3">
+              Have you had a massage before?
+            </div>
+            <div class="col-xs-3">
+              <input type="text" class="form-control" id="massagehx" name="massagehx" disabled="disabled">
+            </div>
+          
+            <div class="col-xs-3">
+              Do you have trouble lying on your back?
+            </div>
+            <div class="col-xs-3">
+              <input type="text" class="form-control" id="supine" name="supine" disabled="disabled">
             </div>
           </div>
 
-          <div class="row">
-            <div class="form-group">
-              <div class="col-xs-4">
-                Do you have trouble lying on your front?
-              </div>
-              <div class="col-xs-8">
-
-                <p><span id="proneVal"></span></p>
-
-              </div>
+          <div class="row form-group">
+            <div class="col-xs-3">
+              Do you have trouble lying on your front?
             </div>
-          </div>
+            <div class="col-xs-3">
+              <input type="text" class="form-control" id="prone" name="prone" disabled="disabled">
+            </div>
 
-          <div class="row">
-            <div class="form-group">
-              <div class="col-xs-4">
-                Do you have trouble lying on your side?
-              </div>
-              <div class="col-xs-8">
-
-                <p><span id="sidelyingVal"></span></p>
-
-              </div>
+            <div class="col-xs-3">
+              Do you have trouble lying on your side?
+            </div>
+            <div class="col-xs-3">
+              <input type="text" class="form-control" id="sidelying" name="sidelying" disabled="disabled">
             </div>
           </div>
 
@@ -203,47 +235,22 @@
             <div class="form-group">
               <div class="form-group">
                 <label class="col-xs-3">
-                  <input type="checkbox" id="headaches" name="headaches" value="headaches"> Headaches
+                  <input type="checkbox" id="headaches" name="headaches" value="headaches" disabled="disabled"> Headaches
                 </label>
               </div>
               <div class="form-group">
                 <label class="col-xs-3">
-                  <input type="checkbox" id="cancer" name="cancer" value="cancer"> Cancer
+                  <input type="checkbox" id="cancer" name="cancer" value="cancer" disabled="disabled"> Cancer
                 </label>
               </div>
               <div class="form-group">
                 <label class="col-xs-3">
-                  <input type="checkbox" id="numbness" name="numbness" value="numbness"> Numbness/Tingling
+                  <input type="checkbox" id="numbness" name="numbness" value="numbness" disabled="disabled"> Numbness/Tingling
                 </label>
               </div>
               <div class="form-group">
                 <label class="col-xs-3">
-                  <input type="checkbox" id="kidney" name="kidney" value="kidney"> Kidney Problems
-                </label>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="form-group">
-              <div class="form-group">
-                <label class="col-xs-3">
-                  <input type="checkbox" id="weakness" name="weakness" value="weakness"> Weakness
-                </label>
-              </div>
-              <div class="form-group">
-                <label class="col-xs-3">
-                  <input type="checkbox" id="nausea" name="nausea" value="nausea"> Nausea
-                </label>
-              </div>
-              <div class="form-group">
-                <label class="col-xs-3">
-                  <input type="checkbox" id="arthritis" name="arthritis" value="arthritis"> Arthritis
-                </label>
-              </div>
-              <div class="form-group">
-                <label class="col-xs-3">
-                  <input type="checkbox" id="stroke" name="stroke" value="stroke"> Stroke
+                  <input type="checkbox" id="kidney" name="kidney" value="kidney" disabled="disabled"> Kidney Problems
                 </label>
               </div>
             </div>
@@ -253,22 +260,22 @@
             <div class="form-group">
               <div class="form-group">
                 <label class="col-xs-3">
-                  <input type="checkbox" id="diabetes" name="diabetes" value="diabetes"> Diabetes
+                  <input type="checkbox" id="weakness" name="weakness" value="weakness" disabled="disabled"> Weakness
                 </label>
               </div>
               <div class="form-group">
                 <label class="col-xs-3">
-                  <input type="checkbox" id="depression" name="depression" value="depression"> Depression
+                  <input type="checkbox" id="nausea" name="nausea" value="nausea" disabled="disabled"> Nausea
                 </label>
               </div>
               <div class="form-group">
                 <label class="col-xs-3">
-                  <input type="checkbox" id="bowel" name="bowel" value="bowel"> Bowel Problems
+                  <input type="checkbox" id="arthritis" name="arthritis" value="arthritis" disabled="disabled"> Arthritis
                 </label>
               </div>
               <div class="form-group">
                 <label class="col-xs-3">
-                  <input type="checkbox" id="bladder" name="bladder" value="bladder"> Bladder Problems
+                  <input type="checkbox" id="stroke" name="stroke" value="stroke" disabled="disabled"> Stroke
                 </label>
               </div>
             </div>
@@ -278,22 +285,47 @@
             <div class="form-group">
               <div class="form-group">
                 <label class="col-xs-3">
-                  <input type="checkbox" id="chest" name="chest" value="chest"> Chest Pain
+                  <input type="checkbox" id="diabetes" name="diabetes" value="diabetes" disabled="disabled"> Diabetes
                 </label>
               </div>
               <div class="form-group">
                 <label class="col-xs-3">
-                  <input type="checkbox" id="dizziness" name="dizziness" value="dizziness"> Dizziness
+                  <input type="checkbox" id="depression" name="depression" value="depression" disabled="disabled"> Depression
                 </label>
               </div>
               <div class="form-group">
                 <label class="col-xs-3">
-                  <input type="checkbox" id="breathing" name="breathing" value="breathing"> Breathing Problems
+                  <input type="checkbox" id="bowel" name="bowel" value="bowel" disabled="disabled"> Bowel Problems
                 </label>
               </div>
               <div class="form-group">
                 <label class="col-xs-3">
-                  <input type="checkbox" id="abdominal" name="abdominal" value="abdominal"> Abdominal Pain
+                  <input type="checkbox" id="bladder" name="bladder" value="bladder" disabled="disabled"> Bladder Problems
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="chest" name="chest" value="chest" disabled="disabled"> Chest Pain
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="dizziness" name="dizziness" value="dizziness" disabled="disabled"> Dizziness
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="breathing" name="breathing" value="breathing" disabled="disabled"> Breathing Problems
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="abdominal" name="abdominal" value="abdominal" disabled="disabled"> Abdominal Pain
                 </label>
               </div>
             </div>
@@ -303,13 +335,19 @@
             <br>
           </div>
 
-          <div class="row">
-            <div class="col-xs-6">
-              <p>Other medical conditions or injuries: <span id="otherconditionVal"></span></p>
+          <div class="row form-group">
+            <div class="col-xs-2">
+              <p>Other Medical Conditions: </p>
+            </div>
+            <div class="col-xs-4">
+              <input type="text" class="form-control" id="othercondition" name="othercondition" disabled="disabled">
             </div>
 
-            <div class="col-xs-6">
-              <p>Current Medication: <span id="medicationVal"></span></p>
+            <div class="col-xs-2">
+              <p>Current Medication: </p>
+            </div>
+            <div class="col-xs-4">
+              <input type="text" class="form-control" id="medication" name="medication" disabled="disabled">
             </div>
           </div>
 
@@ -325,23 +363,19 @@
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-xs-8">
-              <p>I understand and agree with the above statement: <span id="sigantureVal"></span></p>
+          <div class="row form-group">
+            <div class="col-xs-2">
+              Signed:
+            </div>
+            <div class="col-xs-6">
+              <img id="signature" src="">
             </div>
 
-            <div class="col-xs-4">
-              <p>Date: <span id="todayVal"></span></p>
+            <div class="col-xs-2">
+              Date:
             </div>
-          </div>
-
-          <div class="row">
-            <br>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-12 text-center">
-              <button type="submit" class="btn-xl btn-primary">Submit</button>
+            <div class="col-xs-2">
+              <input type="text" class="form-control" id="today" name="today" disabled="disabled" disabled="disabled">
             </div>
           </div>
 
@@ -368,21 +402,58 @@
     <script src="../js/jSignature.js"></script>
     <script>
         $(document).ready(function() {
-            $("#signature").jSignature();
+          var params = getUrlVars();
 
-            //set the date
-            var date = new Date();
+          var img = "data:image/png;base64," + $.urlParam('sig');
+          $("#signature").prop('src', img);
 
-            var day = date.getDate();
-            var month = date.getMonth() + 1;
-            var year = date.getFullYear();
+          // $("#name").val($.urlParam('name'))
 
-            if (month < 10) month = "0" + month;
-            if (day < 10) day = "0" + day;
+          $.each(params, function(i, v) {
+            var val = decodeURIComponent($.urlParam(v));
+            val = val.replace(/\+/g, " ");
 
-            var today = year + "-" + month + "-" + day;       
-            $("#today").val(today);
+            var input = $("#" + v);
+
+            switch (input[0].type) {
+              case "text":
+                if (val == "0") {
+                  $("#" + v).val("");
+                } else {
+                  $("#" + v).val(val);
+                }
+                break;
+              case "checkbox":
+                $("#" + v).prop('checked', true);
+                break;
+              default:
+                $("#" + v).val(val);
+            }
+          });
         })
+
+        $.urlParam = function(name){
+          var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+          if (results==null){
+            return null;
+          }
+          else{
+            return results[1] || 0;
+          }
+        }
+
+        function getUrlVars()
+        {
+          var vars = [], hash;
+          var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+          for(var i = 0; i < hashes.length; i++)
+          {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+          }
+          return vars;
+        }
     </script>
   </body>
 </html>
