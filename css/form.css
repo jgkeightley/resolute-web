@@ -1,0 +1,15 @@
+.navbar {
+	background-color: white;
+	border: none;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+
+footer {
+	background: white;
+	color: black;
+}
+
+#signature {
+	width: 250px;
+}
