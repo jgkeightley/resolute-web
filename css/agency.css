@@ -8,6 +8,16 @@
   font-family: "Amatic SC", "Helvetica Neue", Helvetica, Arial, cursive !important;
 }
 
+@media print { 
+    .navbar {
+        display: block;
+        border-width:0 !important;
+    }
+    .navbar-toggle {
+        display:none;
+    }
+}
+
 body {
   overflow-x: hidden;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
