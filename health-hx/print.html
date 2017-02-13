@@ -411,6 +411,8 @@
           // $("#name").val($.urlParam('name'))
 
           $.each(params, function(i, v) {
+            if (v == "sig") {return;}
+
             var val = decodeURIComponent($.urlParam(v));
             val = val.replace(/\+/g, " ");
 
