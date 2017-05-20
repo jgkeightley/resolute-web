@@ -26,3 +26,7 @@ footer {
 	border: 1px solid #cccccc;
     border-radius: 2px;
 }
+
+.jSignature {
+	height: 198px !important;
+}
