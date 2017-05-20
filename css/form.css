@@ -30,3 +30,9 @@ footer {
 .jSignature {
 	height: 198px !important;
 }
+
+@media (min-width: 768px) {
+	.jSignature {
+		height: 198px !important;
+	}
+}
