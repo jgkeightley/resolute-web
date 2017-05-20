@@ -13,3 +13,16 @@ footer {
 #signature {
 	width: 250px;
 }
+
+.form-underlined {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	box-shadow: none;
+}
+
+.edit-div {
+	min-height: 150px;
+	border: 1px solid #cccccc;
+    border-radius: 2px;
+}
