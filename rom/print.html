@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="theme-color" content="#333333">
+    <title>New Client History Form</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="../css/agency.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/form.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <a href="index.html"><img src="../img/logo/full.png" style="width: 150px;"></a>
+          </a>
+        </div>
+        <ul class="nav masthead-nav navbar-right">
+          <h2>New Client Form</h2>
+        </ul>
+      </div>
+    </nav>
+
+      <div class="container">
+        <form id="newClient">
+
+          <div class="row form-group">
+            <div class="col-xs-1">
+              <p>Name: </p>
+            </div>
+            <div class="col-xs-5">
+              <input type="text" class="form-control" id="name" name="name" disabled="disabled">
+            </div>
+
+            <div class="col-xs-1">
+              <p>Phone: </p>
+            </div>
+            <div class="col-xs-5">
+              <input type="text" class="form-control" id="phone" name="phone" disabled="disabled">
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <div class="col-xs-1">
+              <p>Address: </p>
+            </div>
+
+            <div class="col-xs-11">
+              <input type="text" class="form-control" id="address" name="address" disabled="disabled">
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <div class="col-xs-1">
+              <p>City: </p>
+            </div>
+
+            <div class="col-xs-4">
+              <input type="text" class="form-control" id="city" name="city" disabled="disabled">
+            </div>
+
+            <div class="col-xs-1">
+              <p>State: </p>
+            </div>
+
+            <div class="col-xs-2">
+              <input type="text" class="form-control" id="state" name="state" disabled="disabled">
+            </div>
+
+            <div class="col-xs-1">
+              <p>Post Code: </p>
+            </div>
+
+            <div class="col-xs-3">
+              <input type="text" class="form-control" id="postcode" name="postcode"  disabled="disabled">
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <div class="col-xs-1">
+              <p>Email: </p>
+            </div>
+
+            <div class="col-xs-4">
+              <input type="text" class="form-control" id="email" name="email" disabled="disabled">
+            </div>
+
+            <div class="col-xs-1">
+              <p>D.O.B: </p>
+            </div>
+
+            <div class="col-xs-2">
+              <input type="text" class="form-control" id="dob" name="dob" disabled="disabled">
+            </div>
+
+            <div class="col-xs-1">
+              <p>Occupation: </p>
+            </div>
+
+            <div class="col-xs-3">
+              <input type="text" class="form-control" id="occupation" name="occupation" disabled="disabled">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h2 class="text-center">Emergency Contact 1</h2>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-xs-2">
+                  <p>Name: </p>
+                </div>
+                <div class="col-xs-10">
+                  <input type="text" class="form-control" id="ec1" name="ec1" disabled="disabled">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-xs-2">
+                  <p>Phone: </p>
+                </div>
+                <div class="col-xs-10">
+                  <input type="text" class="form-control" id="ec1phone" name="ec1phone" disabled="disabled">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h2 class="text-center">Emergency Contact 2</h2>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-xs-2">
+                  <p>Name: </p>
+                </div>
+                <div class="col-xs-10">
+                  <input type="text" class="form-control" id="ec2" name="ec2" disabled="disabled">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-xs-2">
+                  <p>Phone: </p>
+                </div>
+                <div class="col-xs-10">
+                  <input type="text" class="form-control" id="ec2phone" name="ec2phone" disabled="disabled">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="text-center">Primary Reason For Visit</h2>
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <div class="col-xs-2">
+              <p>Major complaint: </p>
+            </div>
+            <div class="col-xs-4">
+              <input type="text" class="form-control" id="complaint" name="complaint" disabled="disabled">
+            </div>
+
+            <div class="col-xs-2">
+              <p>Date of onset: </p>
+            </div>
+            <div class="col-xs-4">
+              <input type="text " class="form-control" id="onset" name="onset" disabled="disabled">
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <div class="col-xs-3">
+              Have you had a massage before?
+            </div>
+            <div class="col-xs-3">
+              <input type="text" class="form-control" id="massagehx" name="massagehx" disabled="disabled">
+            </div>
+          
+            <div class="col-xs-3">
+              Do you have trouble lying on your back?
+            </div>
+            <div class="col-xs-3">
+              <input type="text" class="form-control" id="supine" name="supine" disabled="disabled">
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <div class="col-xs-3">
+              Do you have trouble lying on your front?
+            </div>
+            <div class="col-xs-3">
+              <input type="text" class="form-control" id="prone" name="prone" disabled="disabled">
+            </div>
+
+            <div class="col-xs-3">
+              Do you have trouble lying on your side?
+            </div>
+            <div class="col-xs-3">
+              <input type="text" class="form-control" id="sidelying" name="sidelying" disabled="disabled">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="text-center">Related Conditions</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="headaches" name="headaches" value="headaches" disabled="disabled"> Headaches
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="cancer" name="cancer" value="cancer" disabled="disabled"> Cancer
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="numbness" name="numbness" value="numbness" disabled="disabled"> Numbness/Tingling
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="kidney" name="kidney" value="kidney" disabled="disabled"> Kidney Problems
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="weakness" name="weakness" value="weakness" disabled="disabled"> Weakness
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="nausea" name="nausea" value="nausea" disabled="disabled"> Nausea
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="arthritis" name="arthritis" value="arthritis" disabled="disabled"> Arthritis
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="stroke" name="stroke" value="stroke" disabled="disabled"> Stroke
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="diabetes" name="diabetes" value="diabetes" disabled="disabled"> Diabetes
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="depression" name="depression" value="depression" disabled="disabled"> Depression
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="bowel" name="bowel" value="bowel" disabled="disabled"> Bowel Problems
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="bladder" name="bladder" value="bladder" disabled="disabled"> Bladder Problems
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="chest" name="chest" value="chest" disabled="disabled"> Chest Pain
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="dizziness" name="dizziness" value="dizziness" disabled="disabled"> Dizziness
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="breathing" name="breathing" value="breathing" disabled="disabled"> Breathing Problems
+                </label>
+              </div>
+              <div class="form-group">
+                <label class="col-xs-3">
+                  <input type="checkbox" id="abdominal" name="abdominal" value="abdominal" disabled="disabled"> Abdominal Pain
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <br>
+          </div>
+
+          <div class="row form-group">
+            <div class="col-xs-2">
+              <p>Other Medical Conditions: </p>
+            </div>
+            <div class="col-xs-4">
+              <input type="text" class="form-control" id="othercondition" name="othercondition" disabled="disabled">
+            </div>
+
+            <div class="col-xs-2">
+              <p>Current Medication: </p>
+            </div>
+            <div class="col-xs-4">
+              <input type="text" class="form-control" id="medication" name="medication" disabled="disabled">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="text-center">Disclaimer</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="">Massage may elicit benefits for certain conditions, which may include relief of muscular tension, reduction in the symptoms of stress-related conditions and provision of general health and wellbeing. I also understand that massage therapy may produce side-effects such as muscle soreness, mild bruising, increased awareness of areas of pain and lightheadedness amongst other possible temporary outcomes. I am aware that the therapist does not diagnose illnesses, prescribe medications nor physically manipulate the spine or its immediate articulations.</p>
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <div class="col-xs-2">
+              Signed:
+            </div>
+            <div class="col-xs-6">
+              <img id="signature" src="">
+            </div>
+
+            <div class="col-xs-2">
+              Date:
+            </div>
+            <div class="col-xs-2">
+              <input type="text" class="form-control" id="today" name="today" disabled="disabled" disabled="disabled">
+            </div>
+          </div>
+
+          <div class="row">
+            <br>
+          </div>
+
+          <div class="row hidden-print">
+            <div class="col-xs-12 text-center">
+              <input type="text" id="sig" name="sig" hidden="true">
+              <a id="go" class="btn-lg btn-primary" onclick="print()">Print</a>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <div class="container">
+        
+      </div>
+
+      <hr class="featurette-divider">
+
+      <footer>
+        <div class="inner">
+          <p>Made with love in the 6006.</p>
+        </div>
+      </footer>
+    </div>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="../js/jSignature.js"></script>
+    <script>
+        $(document).ready(function() {
+          var params = getUrlVars();
+
+          var img = "data:image/png;base64," + $.urlParam('sig');
+          $("#signature").prop('src', img);
+
+          // $("#name").val($.urlParam('name'))
+
+          $.each(params, function(i, v) {
+            if (v == "sig") {return;}
+
+            var val = decodeURIComponent($.urlParam(v));
+            val = val.replace(/\+/g, " ");
+
+            var input = $("#" + v);
+
+            switch (input[0].type) {
+              case "text":
+                if (val == "0") {
+                  $("#" + v).val("");
+                } else {
+                  $("#" + v).val(val);
+                }
+                break;
+              case "checkbox":
+                $("#" + v).prop('checked', true);
+                break;
+              default:
+                $("#" + v).val(val);
+            }
+          });
+        })
+
+        $.urlParam = function(name){
+          var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+          if (results==null){
+            return null;
+          }
+          else{
+            return results[1] || 0;
+          }
+        }
+
+        function getUrlVars()
+        {
+          var vars = [], hash;
+          var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+          for(var i = 0; i < hashes.length; i++)
+          {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+          }
+          return vars;
+        }
+    </script>
+  </body>
+</html>
